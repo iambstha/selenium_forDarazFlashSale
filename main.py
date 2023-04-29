@@ -15,6 +15,7 @@ driver.get("https://www.daraz.com.np/")
 
 
 def askItem():
+    print(2+3)
     askedItem = input("Search item in Daraz Flash Sale: ")
     findComponents(askedItem)
 
