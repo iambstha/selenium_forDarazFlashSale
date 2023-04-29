@@ -26,12 +26,10 @@ def findComponents(askedItem):
     
     flash_element = driver.find_element(by=By.XPATH, value="/html/body/div[3]/div[2]")
     sale_element = flash_element.find_elements(by=By.CLASS_NAME, value="sale-title")
-    # arrFlash = []
-    # for i in sale_element:
-    #     arrFlash.append(i.text)
     
     for items in sale_element:
         if item in items.text:
             print(items.text) 
 
+    print("hehe")
 askItem()
